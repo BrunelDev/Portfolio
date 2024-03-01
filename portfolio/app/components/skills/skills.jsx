@@ -2,7 +2,7 @@ export function Skills() {
   return (
     <div className="skills">
       <div className="skills-header">
-        <span className="text-pink-pure">#</span>projects
+        <span className="text-pink-pure">#</span>skills
         <img src="pinkLine.png" alt="" />
       </div>
       <div className="skill-list">

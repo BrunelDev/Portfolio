@@ -3,14 +3,13 @@
   padding: 0;
 }
 body {
-  background-color: #282c33;
+  background-color: #202127;
+  color: rgb(197, 197, 197);
 }
 .container {
   margin: 15px;
 }
-.header {
-  display: flex;
-}
+
 .social {
   position: relative;
   top: 67px;
@@ -152,7 +151,7 @@ largeur de menu voulue => ?
 }
 .sidebar hr {
   border-width: 1px;
-  border-color: gray;
+  border-color: rgb(197, 197, 197);
   margin: 0 30%;
   border-radius: 2px;
 }
@@ -178,7 +177,7 @@ nav a {
 }
 nav a li {
   font-size: large;
-  color: gray;
+  color: rgb(197, 197, 197);
   height: 100%;
   margin-right: 10px;
   padding-bottom: 10px;
@@ -190,7 +189,7 @@ nav a li:hover {
 @keyframes onHover {
   0% {
     opacity: 1;
-    color: gray;
+    color: rgb(197, 197, 197);
   }
   50% {
     opacity: 0;
@@ -216,10 +215,11 @@ nav a li#current {
 }
 
 .introducing {
+  transform: translateY(-100px);
   margin-left: 10%;
   font-size: xx-large;
   color: white;
-  width: 36%;
+  width: 45%;
   float: left;
 }
 .profession {
@@ -231,7 +231,7 @@ nav a li#current {
   color: #7a3d8a;
 }
 .profession-description {
-  color: gray;
+  color: rgb(197, 197, 197);
   margin-top: 60px;
   width: 70%;
   font-size: medium;
@@ -254,26 +254,27 @@ nav a li#current {
 }
 .dev-img {
   position: absolute;
-  top: 120px;
-  right: 10%;
+  top: -80px;
+  right: -90%;
 }
 .occupation {
+  display: inline-block;
+  display: none;
   position: absolute;
   top: 400px;
   transform: translateX(-30px);
   right: 10%;
-  color: gray;
+  color: rgb(197, 197, 197);
   font-size: medium;
   margin-top: 10px;
   background-color: #282c33;
   border: 1px solid #c778dd;
   padding: 5px;
-  display: inline-block;
 }
 
 .quote-container {
   margin-right: 30px;
-  margin-top: 70px;
+  transform: translateY(-50px);
   display: block;
   margin-left: 30%;
   color: white;
@@ -322,6 +323,9 @@ nav a li#current {
   border: 1px solid gray;
   border-top: 0px;
 }
+.project {
+  transform: translateY(-25px);
+}
 .project-header {
   margin-left: 10%;
   margin-top: 100px;
@@ -332,6 +336,7 @@ nav a li#current {
   margin-right: 20%;
   position: relative;
 }
+
 .project-header img {
   position: relative;
   width: 60%;
@@ -358,23 +363,25 @@ nav a li#current {
   margin-top: 60px;
   width: 330px;
   height: 100%;
-
   position: relative;
+  transition: 0.2s;
+}
+.project-:hover {
+  transform: scale(1.05);
 }
 .project- img {
   width: 330px;
   height: 100%;
   border-bottom: 2px solid gray;
 }
-
 .project-link a {
   display: block;
   border: 2px solid gray;
-  color: gray;
+  color: rgb(197, 197, 197);
   text-decoration: none;
   margin-top: 13px;
   padding: 5px;
-  width: 15%;
+  width: 100%;
   transition: 0.4s;
 }
 .project-link a:hover {
@@ -383,11 +390,11 @@ nav a li#current {
 }
 
 .technology {
-  color: gray;
+  color: rgb(197, 197, 197);
   width: 100%;
   height: 100%;
   padding: 10px;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid rgb(197, 197, 197);
 }
 
 #technology2 {
@@ -397,7 +404,7 @@ nav a li#current {
   bottom: -154px;
 }
 .project-description {
-  color: gray;
+  color: rgb(197, 197, 197);
   padding: 10px;
   width: 310px;
   height: 100%;
@@ -408,10 +415,10 @@ nav a li#current {
   padding-bottom: 10px;
 }
 .skills {
-  margin-top: 160px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .skills-header {
-  margin-left: 10%;
   margin-top: 20px;
   font-size: xx-large;
   color: white;
@@ -426,55 +433,181 @@ nav a li#current {
 }
 .skills-header h6 {
   padding-top: 12px;
-  margin-left: 250px;
+
   font-size: medium;
 }
 
 .skill-list {
-  float: right;
   margin-top: 100px;
-  margin-left: 40%;
 
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  column-span: 3;
+  margin-left: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
   padding-bottom: 50px;
 }
 .skillbox {
   color: white;
   border: 2px solid gray;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  width: 120px;
+  width: 140px;
 }
 .skillbox-header {
   padding: 5px;
+  background-color: #aeb3bc1a;
 }
 .skillbox hr {
   border-color: gray;
 }
 .skillbox-body {
-  color: gray;
+  color: rgb(197, 197, 197);
   padding: 5px;
 }
+.aboutMe-container {
+  clear: right;
+  transform: translateY(55px);
+  margin-bottom: 150px;
+}
+.aboutMe-header {
+  margin-left: 10%;
+  width: 80%;
+  font-size: xx-large;
+  color: white;
+  display: inline-flex;
+  margin-bottom: 40px;
+}
+/*className="border-pink-pure border w-80 absolute bottom-6 left-48";*/
 
-@media screen and (max-width: 1108px) {
+.aboutMe-header hr {
+  transform: translateY(24px);
+  margin-left: 10px;
+  border-width: 1px;
+  border-color: #c778dd;
+  width: 45%;
+}
+.aboutme-text {
+  width: 45%;
+  height: 100%;
+  margin-left: 10%;
+}
+.aboutme-text a {
+  padding: 5px 10px;
+  border: 2px solid #787676;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px white;
+  transform: 0.4s;
+}
+.aboutme-text a:hover {
+  box-shadow: -1px -3px 5px rgb(197, 197, 197);
+}
+.aboutme-text + img {
+  margin-right: 20px;
+  width: 350px;
+  transform: translateY(-10%);
+}
+.contact-container {
+  width: 100%;
+  margin: 90px 0px 25px 0px;
+}
+.contact-text {
+  margin-left: 10%;
+  width: 35%;
+  height: 100%;
+}
+.contact-box {
+  position: absolute;
+  border: 2px solid gray;
+  top: 40px;
+  right: 0px;
+}
+.contact-box > span {
+  display: block;
+  text-align: center;
+  background-color: #aeb3bc1a;
+  padding: 10px;
+}
+.social2 {
+  width: 100%;
+  padding: 5px;
+}
+.social2:nth-of-type(1) {
+  border-top: solid 2px gray;
+}
+.social2 a:hover {
+  color: white;
+}
+.social2 a:hover img {
+  filter: brightness(0) invert(1);
 }
 
-@media screen and (max-width: 678px) {
-  .social > img {
-    height: 120px;
-    width: 2px;
+.footer-container {
+  margin-top: 170px;
+}
+.footer-container hr {
+  border-color: gray;
+}
+.footer-content {
+  text-shadow: 2px 2px 5px #202127;
+  margin: 20px 10% 0 10%;
+  font-family: "Lucida Sans", sans-serif;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-content a {
+  color: #787676;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+.footer-content a:hover {
+  color: white;
+} /*709*/
+.footer-social {
+  margin-left: auto;
+}
+.footer-icon {
+  margin-top: 10px;
+
+  display: flex;
+}
+.footer-icon img {
+  width: 100%;
+}
+.footer-icon a:hover {
+  filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 709px) {
+  .footer-social {
+    margin-left: 0px;
   }
-  .social-logo img {
-    width: 20px;
+}
+@media screen and (max-width: 839px) {
+  .aboutme-text + img {
+    margin: 0 10%;
+    width: 80%;
+    transform: translateY(0px);
+  }
+  .aboutme-text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 857px) {
+  .intro-and-img {
+    flex-direction: column;
   }
   .dev-img {
-    width: 50%;
-    right: -10px;
-    top: 25%;
+    position: static;
+    width: 100%;
   }
+
   .skills-header img {
     width: 50%;
     right: 0px;
@@ -482,20 +615,18 @@ nav a li#current {
   }
 
   .occupation {
-    position: absolute;
-    width: 25%;
-    top: 350px;
     display: none;
-    right: 0px;
-    color: rgb(158, 154, 154);
-    font-size: 0.7em;
-    margin-left: 40%;
+    position: static;
+    display: inline-block;
+    font-size: 0.4em;
+    margin-left: 20%;
+    transform: translateY(-40px);
   }
   .profession-description {
     width: 150%;
   }
   .introducing {
-    font-size: 1.2em;
+    width: 80%;
   }
 }
 
@@ -547,5 +678,21 @@ nav a li#current {
   }
   .quote-symbol1 {
     top: 8px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contact-body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact-box {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: static;
+    width: 80%;
+  }
+  .contact-text {
+    width: 80%;
   }
 }
