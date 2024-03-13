@@ -6,19 +6,19 @@ export function Navbar() {
       <div className="header">
         <div className="header-left">
           <div className="social">
-            <img src="Line.png" alt="A line" />
+            <Image src="./Line.png" alt="A line" />
 
             <div className="social-logo">
               <a href="#">
-                <img src="Github.png" alt="" />
+                <Image src="./Github.png" alt="" />
               </a>
 
               <a href="#">
-                <img src="Linkedin.svg" alt="" />
+                <Image src="./Linkedin.svg" alt="" />
               </a>
 
               <a href="#">
-                <img src="Email.png" alt="" />
+                <Image src="./Email.png" alt="" />
               </a>
             </div>
           </div>

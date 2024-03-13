@@ -31,7 +31,7 @@ export function Contact() {
           </div>
           <br />
           <div className="text-white float-left contact-text">
-            📞 Let's build something beautiful together!. I’m interested in
+            📞 Let&apos;s build something beautiful together!. I’m interested in
             freelance opportunities. However, if you have other request or
             question, don’t hesitate to contact me.
           </div>

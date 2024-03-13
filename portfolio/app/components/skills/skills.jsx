@@ -3,7 +3,7 @@ export function Skills() {
     <div className="skills">
       <div className="skills-header">
         <span className="text-pink-pure">#</span>skills
-        <img src="pinkLine.png" alt="" />
+        <Image src="./pinkLine.png" alt="" />
       </div>
       <div className="skill-list">
         <div className="skillbox">
