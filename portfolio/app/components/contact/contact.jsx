@@ -1,3 +1,4 @@
+import { Image } from "next/image";
 export function Contact() {
   return (
     <div className="contact-container">
@@ -12,19 +13,19 @@ export function Contact() {
             <span>Contact me here</span>
             <div className="social2">
               <a href="mailto:ahokpossibrunel@gmail.com" className="flex">
-                <img src="Email.png" alt="Email icon" />
+                <Image src="Email.png" alt="Email icon" />
                 <span>ahokpossibrunel@gmail.com</span>
               </a>
             </div>
             <div className="social2">
               <a href="github.com" className="flex">
-                <img src="Github.png" alt="github icon" />
+                <Image src="Github.png" alt="github icon" />
                 <span>BrunelDev</span>
               </a>
             </div>
             <div className="social2">
               <a href="linkedin.com" className="flex">
-                <img src="Linkedin.svg" alt="Linkedin icon" />
+                <Image src="Linkedin.svg" alt="Linkedin icon" />
                 <span>AHOKPOSSI Brunel</span>
               </a>
             </div>

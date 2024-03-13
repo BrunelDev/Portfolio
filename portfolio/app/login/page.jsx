@@ -1,6 +1,6 @@
 "use client";
 import { FacebookLogo } from "../components/logo/logo";
-
+import { Image } from "next/image";
 import "../components/portfolioStyle/portfolio.css";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -25,7 +25,7 @@ export default function AuthPage() {
   return (
     <div className="container">
       <div className="top">
-        <img src="hero.png" alt="machine a laver" />
+        <Image src="hero.png" alt="machine a laver" />
       </div>
       <div className="form-back">
         <h2>Welcome</h2>

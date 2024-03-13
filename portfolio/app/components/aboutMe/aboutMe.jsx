@@ -1,3 +1,4 @@
+import { Image } from "next/image";
 import "../portfolioStyle/portfolio.css";
 export function AboutMe() {
   return (
