@@ -1,3 +1,4 @@
+import { Image } from "next/image";
 export function Introduction() {
   return (
     <div class="intro-and-img">
@@ -5,8 +6,8 @@ export function Introduction() {
         Brunel is a <span class="profession">Fullstack developper</span> and a{" "}
         <span class="profession">mobile developper</span>
         <div class="group1">
-          <img
-            src="developperImage.png"
+          <Image
+            src="./developperImage.png"
             alt="developerImage"
             width="410px"
             class="dev-img"

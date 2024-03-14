@@ -1,3 +1,4 @@
+import { Image } from "next/image";
 export function Footer() {
   return (
     <div className="footer-container">
@@ -15,13 +16,13 @@ export function Footer() {
             <h5>Connect with me</h5>
             <div className="footer-icon">
               <a href="mailto:ahokpossibrunel@gmail.com">
-                <img src="Email.png" alt="Email icon" />
+                <Image src="./Email.png" alt="Email icon" />
               </a>
               <a href="github.com">
-                <img src="Github.png" alt="Github icon" />
+                <Image src="./Github.png" alt="Github icon" />
               </a>
               <a href="Linkedin.com">
-                <img src="Linkedin.svg" alt="Linkedin icon" />
+                <Image src="./Linkedin.svg" alt="Linkedin icon" />
               </a>
             </div>
           </div>

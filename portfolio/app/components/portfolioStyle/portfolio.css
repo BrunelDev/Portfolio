@@ -115,7 +115,10 @@ largeur de menu voulue => ?
   transform-origin: left;
   transform: translate(6px, 7.8px) rotate(-45deg);
 }
-
+.sidebar {
+  display: block;
+  z-index: -1;
+}
 .sidebar ul {
   height: 100vh;
   background-color: rgba(70, 62, 62, 0.522);
@@ -626,73 +629,6 @@ nav a li#current {
     width: 150%;
   }
   .introducing {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 709px) {
-  .project-header img {
-    width: 50%;
-    right: 0px;
-    top: 25%;
-  }
-  .project-header h6 {
-    right: -30%;
-  }
-}
-
-@media screen and (max-width: 735px) {
-  .quote-author {
-    top: 103px;
-  }
-  .quote-symbol2 {
-    top: 91px;
-  }
-}
-
-@media screen and (max-width: 838px) {
-  .quote-container {
-    margin-left: 20%;
-  }
-}
-
-@media screen and (max-width: 678px) {
-  nav > ul li {
-    display: none;
-  }
-  .menu {
-    display: block;
-  }
-}
-@media screen and (max-width: 422px) {
-  .quote-container {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 0.8em;
-  }
-  .quote-author {
-    top: 88px;
-  }
-  .quote-symbol2 {
-    top: 78px;
-  }
-  .quote-symbol1 {
-    top: 8px;
-  }
-}
-@media screen and (max-width: 730px) {
-  .contact-body {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .contact-box {
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    position: static;
-    width: 80%;
-  }
-  .contact-text {
     width: 80%;
   }
 }
