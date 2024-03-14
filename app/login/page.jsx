@@ -4,7 +4,6 @@ import Image from "next/image";
 import "../components/portfolioStyle/portfolio.css";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { SigninForm } from "../components/register/register";
 import { LoginForm } from "../components/login/login";
 import "./index.css";
 
@@ -52,9 +51,6 @@ export default function AuthPage() {
         </div>
         <div className={showLoginForm ? "login-form" : "login-form hidden"}>
           <LoginForm />
-        </div>
-        <div className={showSigninForm ? "login-form" : "login-form hidden"}>
-          <SigninForm />
         </div>
       </div>
     </div>
