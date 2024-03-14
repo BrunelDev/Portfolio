@@ -1,4 +1,4 @@
-import { Image } from "next/image";
+import Image from "next/image";
 import { Menu } from "../menu/menu.jsx";
 import "../portfolioStyle/portfolio.css";
 export function Navbar() {

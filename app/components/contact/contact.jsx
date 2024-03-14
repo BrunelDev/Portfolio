@@ -1,4 +1,4 @@
-import { Image } from "next/image";
+import Image from "next/image";
 export function Contact() {
   return (
     <div className="contact-container">

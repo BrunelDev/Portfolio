@@ -1,13 +1,11 @@
 "use client";
 import { FacebookLogo } from "../components/logo/logo";
-import { Image } from "next/image";
+import Image from "next/image";
 import "../components/portfolioStyle/portfolio.css";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { signIn } from "next-auth/react";
 import { SigninForm } from "../components/register/register";
 import { LoginForm } from "../components/login/login";
-import { useShowFormStore } from "@/hooks/useStore";
 import "./index.css";
 
 export default function AuthPage() {

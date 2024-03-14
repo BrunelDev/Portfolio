@@ -1,4 +1,4 @@
-import { Image } from "next/image";
+import Image from "next/image";
 export function Introduction() {
   return (
     <div class="intro-and-img">

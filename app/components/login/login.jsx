@@ -5,8 +5,7 @@ import { GmailLogo } from "../logo/logo";
 import "../portfolioStyle/portfolio.css";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { signIn } from "next-auth/react";
-import { useShowFormStore } from "@/hooks/useStore";
+
 export function LoginForm() {
   const { showLoginForm, setShowLoginForm } = useShowFormStore();
   const router = useRouter();
@@ -18,14 +17,7 @@ export function LoginForm() {
         setError("Tous les champs sont obligatoires !");
         return;
       }
-      const res = await signIn("credentials", {
-        username,
-        password,
-        redirect: false,
-      });
-      if (res.error) {
-        console.log("erreur lors de la connexion");
-      }
+
       router.replace("/");
       return;
     } catch (e) {
