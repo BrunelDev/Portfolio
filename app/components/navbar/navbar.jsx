@@ -7,19 +7,19 @@ export function Navbar() {
       <div className="header">
         <div className="header-left">
           <div className="social">
-            <Image src="./Line.png" alt="A line" />
+            <Image src="/Line.png" alt="A line" />
 
             <div className="social-logo">
               <a href="#">
-                <Image src="./Github.png" alt="" />
+                <Image src="/Github.png" alt="" />
               </a>
 
               <a href="#">
-                <Image src="./Linkedin.svg" alt="" />
+                <Image src="/Linkedin.svg" alt="" />
               </a>
 
               <a href="#">
-                <Image src="./Email.png" alt="" />
+                <Image src="/Email.png" alt="" />
               </a>
             </div>
           </div>

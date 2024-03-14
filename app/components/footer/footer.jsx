@@ -16,13 +16,13 @@ export function Footer() {
             <h5>Connect with me</h5>
             <div className="footer-icon">
               <a href="mailto:ahokpossibrunel@gmail.com">
-                <Image src="./Email.png" alt="Email icon" />
+                <Image src="/Email.png" alt="Email icon" />
               </a>
               <a href="github.com">
-                <Image src="./Github.png" alt="Github icon" />
+                <Image src="/Github.png" alt="Github icon" />
               </a>
               <a href="Linkedin.com">
-                <Image src="./Linkedin.svg" alt="Linkedin icon" />
+                <Image src="/Linkedin.svg" alt="Linkedin icon" />
               </a>
             </div>
           </div>

@@ -27,7 +27,7 @@ export function AboutMe() {
         </p>
         <a href="#">VIEW DETAILS</a>
       </div>
-      <Image src="./message.jpg" alt="" />
+      <Image src="/message.jpg" alt="" />
     </div>
   );
 }

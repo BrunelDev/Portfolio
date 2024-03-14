@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Quote } from "./components/quote/quote.jsx";
 import { Introduction } from "./components/introduction/introduction.jsx";
 import { Projects } from "./components/project/project.jsx";
