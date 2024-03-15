@@ -4,7 +4,13 @@ export function Skills() {
     <div className="skills">
       <div className="skills-header">
         <span className="text-pink-pure">#</span>skills
-        <Image src="/pinkLine.png" alt="" />
+        <Image
+          src="/pinkLine.png"
+          alt=""
+          height={25}
+          width={25}
+          className="img"
+        />
       </div>
       <div className="skill-list">
         <div className="skillbox">

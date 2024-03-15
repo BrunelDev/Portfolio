@@ -9,8 +9,9 @@ export function Introduction() {
           <Image
             src="/developperImage.png"
             alt="developerImage"
-            width="410px"
-            class="dev-img"
+            width={410}
+            height={410}
+            className="dev-img img"
           />
           <div class="occupation">Currently working on another banger</div>
         </div>

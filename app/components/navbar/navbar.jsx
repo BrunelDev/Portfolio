@@ -7,19 +7,46 @@ export function Navbar() {
       <div className="header">
         <div className="header-left">
           <div className="social">
-            <Image src="/Line.png" alt="A line" />
+            <Image
+              className="img"
+              src="/Line.png"
+              alt="A line"
+              width={1}
+              height={150}
+            />
 
             <div className="social-logo">
               <a href="#">
-                <Image src="/Github.png" alt="" />
+                <Image
+                  className="img"
+                  width={25}
+                  height={25}
+                  layout="intrinsic"
+                  src="/Github.png"
+                  alt=""
+                />
               </a>
 
               <a href="#">
-                <Image src="/Linkedin.svg" alt="" />
+                <Image
+                  className="img"
+                  width={25}
+                  height={25}
+                  layout="intrinsic"
+                  src="/Linkedin.svg"
+                  alt=""
+                />
               </a>
 
               <a href="#">
-                <Image src="/Email.png" alt="" />
+                <Image
+                  className="img"
+                  width={25}
+                  height={25}
+                  layout="intrinsic"
+                  src="/Email.png"
+                  alt=""
+                />
               </a>
             </div>
           </div>
