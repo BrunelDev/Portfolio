@@ -6,7 +6,7 @@ export function Quote() {
         <Image
           src="/quote.png"
           alt="quote symbol"
-          class="quote-symbol12 img"
+          class="quote-symbol1"
           height={20}
           width={25}
         />
@@ -19,7 +19,7 @@ export function Quote() {
         <Image
           src="/quote.png"
           alt="quote symbol"
-          className="quote-symbol2 img"
+          className="quote-symbol2"
           height={20}
           width={25}
         />
