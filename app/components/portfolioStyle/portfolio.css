@@ -319,7 +319,6 @@ nav a li#current {
   right: 12px;
   top: 68px;
   z-index: 0;
-  bottom: -40px;
 }
 
 .quote-author {
@@ -340,23 +339,23 @@ nav a li#current {
   font-size: xx-large;
   color: white;
   display: inline-flex;
-  width: 70%;
-  margin-right: 20%;
+  width: 80%;
+  margin-right: 10%;
   position: relative;
 }
 
 .project-header .img {
   position: relative;
-  width: 60%;
+  width: 40%;
   height: 2px;
   bottom: -22px;
   left: 15px;
 }
 .project-header h6 {
   padding-top: 12px;
-  right: 0%;
-  font-size: medium;
-  position: absolute;
+  margin-left: 10%;
+  font-size: small;
+  text-wrap: nowrap;
 }
 .project-body {
   position: relative;
@@ -481,6 +480,7 @@ nav a li#current {
 .aboutMe-header {
   margin-left: 10%;
   width: 80%;
+  text-wrap: nowrap;
   font-size: xx-large;
   color: white;
   display: inline-flex;
@@ -489,7 +489,6 @@ nav a li#current {
 /*className="border-pink-pure border w-80 absolute bottom-6 left-48";*/
 
 .aboutMe-header hr {
-  transform: translateY(24px);
   margin-left: 10px;
   border-width: 1px;
   border-color: #c778dd;
@@ -505,7 +504,7 @@ nav a li#current {
   border: 2px solid #787676;
   border-radius: 10px;
   box-shadow: 1px 3px 5px white;
-  transform: 0.4s;
+  transition: 0.2s;
 }
 .aboutme-text a:hover {
   box-shadow: -1px -3px 5px rgb(197, 197, 197);
@@ -672,10 +671,19 @@ nav a li#current {
     font-size: 1.6em;
   }
 }
-@media screen and (max-width: 600px) {
-  .quote-author {
-    transform: translateY(86%);
+@media screen and (max-width: 477px) {
+  .quote {
+    font-size: 0.9em;
   }
+  .quote-author {
+    top: 98px;
+  }
+  .quote-symbol2 {
+    top: 85px;
+  }
+}
+
+@media screen and (max-width: 417px) {
 }
 /*.profession-description {
     width: 100%;
