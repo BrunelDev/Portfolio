@@ -13,11 +13,13 @@ body {
 .header {
   width: 50%;
 }
+.header-left {
+  width: 30px;
+}
 .social {
   width: 100%;
   position: relative;
 
-  top: 67px;
   left: 0px;
 }
 .social > .img {
@@ -131,7 +133,10 @@ body {
 
   animation: apparition 0.2s;
 }
-.sidebar ul li:nth-child(1) {
+.sidebar a li:hover {
+  animation: none;
+}
+.sidebar a:nth-child(1) {
   margin-top: 30px;
 }
 @keyframes apparition {
@@ -154,7 +159,7 @@ body {
   margin: 0 30%;
   border-radius: 2px;
 }
-.sidebar ul li:hover {
+.sidebar a:hover {
   background-color: #c0c0c0;
 }
 
@@ -215,7 +220,7 @@ nav a li#current {
 }
 
 .introducing {
-  transform: translateY(-100px);
+  transform: translateY(-150px);
   margin-left: 10%;
   font-size: xx-large;
   color: white;
@@ -240,7 +245,7 @@ nav a li#current {
   font-size: medium;
   margin-top: 10px;
   border: 1px solid #c778dd;
-  padding: 5px;
+  padding: 5px 10px;
   display: inline-block;
   transition: 0.3s;
   align-self: end;
@@ -659,11 +664,12 @@ nav a li#current {
 }
 @media screen and (max-width: 600px) {
   .profession-description {
-    width: 100%;
+    width: 90%;
   }
   .introducing {
-    width: 100%;
-    font-size: 1.6em;
+    margin-left: 10%;
+    width: 90%;
+    font-size: 1.3em;
   }
 }
 @media screen and (max-width: 477px) {

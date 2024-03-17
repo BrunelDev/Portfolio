@@ -33,7 +33,7 @@ export function Contact() {
     };
   }, []);
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <div className="relative">
         <div className="aboutMe-header ">
           <div className="text-pink-pure">#</div>

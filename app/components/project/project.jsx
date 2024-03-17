@@ -44,7 +44,7 @@ export function Projects() {
     };
   }, []);
   return (
-    <div class="project">
+    <div class="project" id="project">
       <div class="aboutMe-header">
         <span className="text-pink-pure">#</span>projects
         <hr

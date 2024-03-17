@@ -3,23 +3,21 @@ export function Sidebar() {
   return (
     <div className="sidebar">
       <ul>
-        <li>
-          <a href="#" id="current">
-            home
-          </a>
-        </li>
+        <a href="#" id="current">
+          <li>home</li>
+        </a>
         <hr />
-        <li>
-          <a href="#work">work</a>
-        </li>
+        <a href="#project">
+          <li>Projects</li>
+        </a>
         <hr />
-        <li>
-          <a href="#abouMe">about me</a>
-        </li>
+        <a href="#aboutMe">
+          <li>about me</li>
+        </a>
         <hr />
-        <li>
-          <a href="#contact">contact</a>
-        </li>
+        <a href="#contact">
+          <li>contact</li>
+        </a>
         <hr />
       </ul>
     </div>

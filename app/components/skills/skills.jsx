@@ -36,7 +36,7 @@ export function Skills() {
         <div className="skillbox">
           <div className="skillbox-header">Frameworks</div>
           <hr />
-          <div className="skillbox-body">Django React Node.js Express.js</div>
+          <div className="skillbox-body">Django React Nodejs Express</div>
         </div>
       </div>
     </div>

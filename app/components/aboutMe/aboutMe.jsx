@@ -49,7 +49,7 @@ export function AboutMe() {
   }, []);
 
   return (
-    <div className="aboutMe-container">
+    <div className="aboutMe-container" id="aboutMe">
       <div className="flex relative">
         <div className="aboutMe-header ">
           <div className="text-pink-pure">#</div>
