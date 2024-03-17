@@ -82,7 +82,9 @@ export function Projects() {
                 <a href="">Live ={">"}</a>
               </span>
               <span class="project-link">
-                <a href="">Github ={">"} </a>
+                <a href="https://github.com/BrunelDev/Messenger">
+                  Github ={">"}{" "}
+                </a>
               </span>
             </div>
           </div>
@@ -116,7 +118,7 @@ export function Projects() {
                 <a href="">Live ={">"}</a>
               </span>
               <span class="project-link">
-                <a href="">Github ={">"}</a>
+                <a href="https://github.com/BrunelDev/Todo">Github ={">"}</a>
               </span>
             </div>
           </div>

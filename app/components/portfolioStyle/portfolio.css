@@ -5,6 +5,7 @@
 body {
   background-color: #202127;
   color: rgb(197, 197, 197);
+  user-select: lime;
 }
 .container {
   margin: 15px;
@@ -33,9 +34,7 @@ body {
 }
 
 .social-logo .img:hover {
-  padding: 3px;
-  border-radius: 30px;
-  background-color: #787676;
+  filter: brightness(0) invert(1);
 }
 
 .logo {
@@ -61,7 +60,7 @@ body {
   width: 45px;
   height: 100%;
   background-color: transparent;
-  display: flex;
+  display: none;
   flex-direction: column;
   border-radius: 5px;
   transform: translateY(5px);
@@ -300,7 +299,7 @@ nav a li#current {
 .quote-symbol1 {
   width: 25px;
   height: 20px;
-
+  background-color: #202127;
   position: absolute;
   z-index: 0;
   top: 14px;
@@ -310,6 +309,8 @@ nav a li#current {
 
 .quote-symbol2 {
   display: inline-block;
+  background-color: #202127;
+
   width: 25px;
   height: 20px;
   position: absolute;
@@ -661,6 +662,10 @@ nav a li#current {
   .sidebar li {
     display: block;
   }
+  .menu-box,
+  .menu-animated {
+    display: flex;
+  }
 }
 @media screen and (max-width: 600px) {
   .profession-description {
@@ -672,19 +677,29 @@ nav a li#current {
     font-size: 1.3em;
   }
 }
-@media screen and (max-width: 477px) {
-  .quote {
+@media screen and (max-width: 479px) {
+  .quote-container {
+    width: 85%;
+    display: block;
+    margin-left: 10%;
+    color: white;
     font-size: 0.9em;
   }
   .quote-author {
-    top: 118px;
+    transform: translateY(-8px);
   }
   .quote-symbol2 {
-    top: 105px;
+    transform: translateY(-5px);
   }
 }
 
-@media screen and (max-width: 417px) {
+@media screen and (max-width: 836px) {
+  .quote-author {
+    top: 104px;
+  }
+  .quote-symbol2 {
+    top: 92px;
+  }
 }
 /*.profession-description {
     width: 100%;
