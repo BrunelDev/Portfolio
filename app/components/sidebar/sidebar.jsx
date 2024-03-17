@@ -1,3 +1,4 @@
+import "../portfolioStyle/portfolio.css";
 export function Sidebar() {
   return (
     <div className="sidebar">
@@ -9,15 +10,15 @@ export function Sidebar() {
         </li>
         <hr />
         <li>
-          <a href="#">work</a>
+          <a href="#work">work</a>
         </li>
         <hr />
         <li>
-          <a href="#">about me</a>
+          <a href="#abouMe">about me</a>
         </li>
         <hr />
         <li>
-          <a href="#">contact</a>
+          <a href="#contact">contact</a>
         </li>
         <hr />
       </ul>

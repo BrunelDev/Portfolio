@@ -1,37 +1,37 @@
-.showOnScroll:nth-of-type(1) {
-  opacity: 1;
-  transform: translate(0px, 24px);
-  transition: all 0.8s;
-}
-.hideOnScroll:nth-of-type(1) {
-  opacity: 0;
-  transform: translate(-150px, 24px);
-}
-.showOnScroll:nth-of-type(2) {
+.showProjectOnScroll:nth-of-type(1) {
   opacity: 1;
   transform: translateX(0px);
-  transition: all 0.8s;
+  transition: 0.3s;
 }
-.hideOnScroll:nth-of-type(2) {
+.hideProjectOnScroll:nth-of-type(1) {
   opacity: 0;
-  transform: translateX(150px);
+  transform: translateX(-20%);
+}
+.showProjectOnScroll:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+.hideProjectOnScroll:nth-of-type(3) {
+  opacity: 0;
+  transform: translateX(-20%);
+}
+.showProjectOnScroll:nth-of-type(3) {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+.hideProjectOnScroll:nth-of-type(2) {
+  opacity: 0;
+  transform: translateX(-20%);
 }
 
-.showOnScroll:nth-of-type(3) {
+.showBarOnScroll {
   opacity: 1;
-  transform: translateX(0px);
+  transform: translate(0px, 24px);
   transition: 0.8s;
 }
-.hideOnScroll:nth-of-type(3) {
+.hideBarOnScroll {
   opacity: 0;
-  transform: translateX(-150px);
-}
-.showOnScroll:nth-of-type(3) {
-  opacity: 1;
-  transform: translateX(0px);
-  transition: 0.8s;
-}
-.hideOnScroll:nth-of-type(3) {
-  opacity: 0;
-  transform: translateX(150px);
+  transform: translate(-150px, 24px);
 }

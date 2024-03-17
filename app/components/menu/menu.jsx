@@ -8,18 +8,20 @@ export function Menu() {
   function actionMenu() {
     setShowMenu(!showMenu);
   }
-  const menuClass = !showMenu ? "menu-box" : "menu-box menu-animated";
+  const menuClass = !showMenu ? "menu-box" : "menu-animated";
   return (
-    <div
-      onClick={() => {
-        actionMenu();
-      }}
-      className={menuClass}
-    >
-      <div className="menu-top"></div>
-      <div className="menu-middle"></div>
-      <div className="menu-bottom"></div>
-      {showMenu && <Sidebar />}
+    <div>
+      <div
+        onClick={() => {
+          actionMenu();
+        }}
+        className={menuClass}
+      >
+        <div className="menu-top"></div>
+        <div className="menu-middle"></div>
+        <div className="menu-bottom"></div>
+      </div>
+      <div className="z-0">{showMenu && <Sidebar />}</div>
     </div>
   );
 }

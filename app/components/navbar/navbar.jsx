@@ -68,8 +68,8 @@ export function Navbar() {
                 <a href="#">
                   <li>contact</li>
                 </a>
-                <Menu />
               </ul>
+              <Menu />
             </nav>
           </div>
         </div>

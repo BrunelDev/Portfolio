@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "./project.css";
 import { useState, useRef, useEffect } from "react";
 export function Projects() {
   const [isVisible1, setIsVisible1] = useState(false);
@@ -44,22 +45,19 @@ export function Projects() {
   }, []);
   return (
     <div class="project">
-      <div class="project-header">
+      <div class="aboutMe-header">
         <span className="text-pink-pure">#</span>projects
-        <Image
-          src="/pinkLine.png"
-          alt=""
-          width={25}
-          height={25}
-          className={isVisible1 ? "showOnScroll img" : "hideOnScroll img"}
+        <hr
+          className={isVisible1 ? "showBarOnScroll" : "hideBarOnScroll"}
           ref={ref1}
         />
-        <h6>View all</h6>
       </div>
       <div className="project-body">
         <div
           className={
-            isVisible2 ? "showOnScroll project-" : "hideOnScroll project-"
+            isVisible2
+              ? "showProjectOnScroll project-"
+              : "hideProjectOnScroll project-"
           }
           ref={ref2}
         >
@@ -91,7 +89,9 @@ export function Projects() {
         </div>
         <div
           className={
-            isVisible3 ? "showOnScroll project-" : "hideOnScroll project-"
+            isVisible3
+              ? "showProjectOnScroll project-"
+              : "hideProjectOnScroll project-"
           }
           ref={ref3}
         >
@@ -123,7 +123,9 @@ export function Projects() {
         </div>
         <div
           className={
-            isVisible4 ? "showOnScroll project-" : "hideOnScroll project-"
+            isVisible4
+              ? "showProjectOnScroll project-"
+              : "hideProjectOnScroll project-"
           }
           ref={ref4}
         >

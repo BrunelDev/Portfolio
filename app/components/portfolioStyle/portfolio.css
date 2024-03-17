@@ -49,12 +49,13 @@ body {
 .logo:hover {
   text-shadow: 8px 8px 10px rgb(59, 59, 59);
 }
-.sidebar {
-  display: block;
-  z-index: -1;
-}
-.menu-box {
-  z-index: 1;
+
+.menu-box,
+.menu-animated {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
   width: 45px;
   height: 100%;
   background-color: transparent;
@@ -63,11 +64,7 @@ body {
   border-radius: 5px;
   transform: translateY(5px);
 }
-/* 
-45px => valeur actuelle
-largeur de menu voulue => ?
 
-*/
 .menu-top {
   align-self: center;
   margin: 3px 0px 1.5px 0px;
@@ -102,12 +99,7 @@ largeur de menu voulue => ?
 .menu-box:hover .menu-bottom {
   transform: translateY(6px);
 }
-.menu-animated:hover .menu-middle {
-  transform: translateY(0);
-}
-.menu-animated:hover .menu-bottom {
-  transform: translateY(7.8px);
-}
+
 .menu-animated .menu-top {
   transform-origin: top left;
   transform: translateY(0.5px) translateX(8px) rotate(45deg);
@@ -122,13 +114,12 @@ largeur de menu voulue => ?
 }
 .sidebar {
   display: block;
-  z-index: -1;
 }
 .sidebar ul {
   height: 100vh;
   background-color: rgba(70, 62, 62, 0.522);
   position: fixed;
-  z-index: 999;
+  z-index: 1;
   backdrop-filter: blur(20px);
   display: flex;
   width: 250px;
@@ -168,6 +159,7 @@ largeur de menu voulue => ?
 }
 
 nav {
+  z-index: 999;
   right: 10px;
   position: absolute;
   top: 0px;
@@ -347,7 +339,7 @@ nav a li#current {
 .project-header .img {
   position: relative;
   width: 40%;
-  height: 2px;
+
   bottom: -22px;
   left: 15px;
 }
@@ -374,7 +366,7 @@ nav a li#current {
   transition: 0.2s;
 }
 .project-:hover {
-  transform: scale(1.05);
+  scale: 1.05;
 }
 .project- .img {
   width: 330px;
@@ -479,7 +471,7 @@ nav a li#current {
 }
 .aboutMe-header {
   margin-left: 10%;
-  width: 80%;
+  width: 85%;
   text-wrap: nowrap;
   font-size: xx-large;
   color: white;
@@ -658,8 +650,11 @@ nav a li#current {
   }
 }
 @media screen and (max-width: 600px) {
-  nav ul li {
+  nav li {
     display: none;
+  }
+  .sidebar li {
+    display: block;
   }
 }
 @media screen and (max-width: 600px) {
@@ -676,10 +671,10 @@ nav a li#current {
     font-size: 0.9em;
   }
   .quote-author {
-    top: 98px;
+    top: 118px;
   }
   .quote-symbol2 {
-    top: 85px;
+    top: 105px;
   }
 }
 
